@@ -1,0 +1,184 @@
+/* root */
+
+:root {
+    --text-color: #525367;
+}
+
+/* end root */
+
+/* start global rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* end global rules */
+
+.container {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.des {
+    text-align: center;
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.des h2 {
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.des h3 {
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: var(--text-color);
+}
+
+.des p {
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex .card-1 {
+    flex-basis: 32%;
+    background-color: white;
+    box-shadow: 0px 15px 20px 2px #00000014;
+    border-top: 3px solid #34b8ba;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.flex .two-cards {
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 540px;
+}
+
+.flex .card-2 {
+    background-color: white;
+    box-shadow: 0px 15px 20px 2px #00000014;
+    border-top: 3px solid #ff6f6c;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.flex .card-3 {
+    background-color: white;
+    box-shadow: 0px 15px 20px 2px #00000014;
+    border-top: 3px solid #ffad27;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.flex .card-4 {
+    flex-basis: 32%;
+    background-color: white;
+    box-shadow: 0px 15px 20px 2px #00000014;
+    border-top: 3px solid #2e81c7;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.flex h4 {
+    font-size: 21px;
+    color: var(--text-color);
+}
+
+.flex p {
+    color: var(--text-color);
+    margin-top: 15px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.flex img {
+    display: block;
+    margin-left: auto;
+    margin-top: 55px;
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 90%;
+    }
+    
+    .des {
+        width: 100%;
+    }
+    
+    .des h2 {
+        font-size: 25px;
+    }
+    
+    .des h3 {
+        font-size: 27px;
+    }
+    
+    .des p {
+        font-size: 19px;
+        font-weight: 200;
+    }
+    
+    .flex {
+        flex-direction: column;
+    }
+    
+    .flex .card-1 {
+        margin-bottom: 30px;
+    }
+
+    .flex .card-2 {
+        margin-bottom: 30px;
+    }
+    
+    .flex .card-3 {
+        margin-bottom: 30px;
+    }
+    
+    .flex .card-4 {
+        margin-bottom: 30px;
+    }
+    
+    .flex img {
+        margin-top: 45px;
+    }
+}
+
